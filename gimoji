@@ -1,0 +1,58 @@
+# MyFile = open('practice.txt', 'r')
+#--여기에 들어갈 내용 3개
+# MyFile.close()
+#
+#
+# # 1.read를 사용하는 경우
+# MyFile = open('practice', 'r')
+# print(MyFile.read().count("\n")+1)
+# MyFile.close()
+#
+# 2.readline() 사용하는 경우
+# 읽어들일 값이 없을 때까지 count를 매번 하줄것
+# cnt = 0
+# while True:
+#     if MyFile.readline() == '':
+#         break
+#     cnt += 1
+# print(cnt)
+# MyFile.close()
+#
+#
+# 3.readlines()를 사용하는 경우
+# MyFile = open('practice.txt', 'r')
+# print(len(MyFile.readlines()))
+# MyFile.close()
+#
+#
+# 1. 구구단
+# def googoodan(n):
+#     print("==%ddan=="%n)
+#     for i in range(1, 10):
+#         print("%d * %d = %d"%(n, i, n*i))
+#     print()
+#
+# a,b = map(int, input().split())
+#
+# for n in range(min(a,b), max(a,b)+1):
+#     googoodan(n)
+#
+# #
+# def shipt2():
+#     print("@@@@@@@@@@")
+# print("First")
+# shipt2()
+# print("Second")
+# shipt2()
+# print("Third")
+# shipt2()
+#
+#
+# def square(n):
+#     for i in range(1, n+1):
+#         for j in range(1, n+1):
+#             print(i *j, end='')
+#         print()
+# 
+# n = int(input())
+# square(n)
